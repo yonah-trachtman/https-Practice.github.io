@@ -181,12 +181,14 @@ select:hover{
     color: #93B1BD;
   }
   .middle{
+    font: serif;
     color: #BD0128;
     position: absolute;
     top: 400px;
     right: 600px;
   }
   .middle2{
+    font: serif;
     color: #BD0128;
     position: absolute;
     top: 600px;
