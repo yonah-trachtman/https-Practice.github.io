@@ -50,7 +50,7 @@ ul.nav2 {
 
    }
    .search-bar:hover{
-    border: solid 10px #00467C;
+    border: solid 3px #00467C;
    }
   .search-button {
     background: #00467C;
@@ -145,7 +145,6 @@ select:hover{
   }
 
   #button1{
-    position: absolute;
     top: 650px;
     right: 1180px;
     background-color: #E5A91F;
@@ -163,7 +162,6 @@ select:hover{
   }
 
   #button2{
-    position: absolute;
     top: 650px;
     right: 130px;
     background-color: #E5A91F;
