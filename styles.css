@@ -145,6 +145,7 @@ select:hover{
   }
 
   #button1{
+    position: relative;
     top: 650px;
     right: 1180px;
     background-color: #E5A91F;
@@ -162,6 +163,7 @@ select:hover{
   }
 
   #button2{
+    position: relative;
     top: 650px;
     right: 130px;
     background-color: #E5A91F;
@@ -181,14 +183,14 @@ select:hover{
   .middle{
     font: serif;
     color: #BD0128;
-    position: absolute;
+    position: relative;
     top: 400px;
     right: 600px;
   }
   .middle2{
     font: serif;
     color: #BD0128;
-    position: absolute;
+    position: relative;
     top: 600px;
     right: 600px;
   }
