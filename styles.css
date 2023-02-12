@@ -1,5 +1,8 @@
 #logo {
   float: right;
+  position: absolute;
+  top: 0%;
+  right:0%
 }
 
 ul.nav2 {
@@ -80,6 +83,7 @@ ul.nav2 {
     border-radius: 20px;
     text-align: center;
     width: 100%;
+  
     
 }
 .nav1-content1 {
@@ -122,32 +126,62 @@ select:hover{
     padding: 10px 10px;
 
   }
-  
-  ul.nav3 {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  ul.nav3 li {
-    display: inline-block;
+
+
+  .nav3{
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  ul.nav3 img {
-    width:490px;
-    height: 400px;
-  }
-
-  #firstimage {
-    padding-left: 5px;
-  }
-  #lastimage {
-    padding-right: 5px;
-  }
-
-  #button1{
+  .nav3 img {
+    width: 33.33%;
     position: relative;
-    top: 650px;
-    right: 1180px;
+    margin: 0;
+    float: left;
+  }
+
+
+  .nav3 .middle .middle1{
+    position: absolute;
+    font: serif;
+    color: #BD0128;
+    top: 40%;
+    right: 40%;
+    
+  }
+  .nav3 .middle .middle2{
+    position: absolute;
+    font: serif;
+    color: #BD0128;
+    top: 75%;
+    right: 40%;
+    
+  }
+
+
+  .nav3 .right #button2 {
+    position: absolute;
+    top: 82%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    background-color: #E5A91F;
+    border: solid 1px #00467C;
+    color: #00467C;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .right #button2:hover {
+    background-color: #CF4E24;
+    border: solid 1px #93B1BD;
+    color: #93B1BD;
+  }
+
+  .left #button1{
+    position: absolute;
+    top: 80%;
+    right: 75%;
     background-color: #E5A91F;
     border: solid 1px #00467C;
     color: #00467C;
@@ -155,43 +189,12 @@ select:hover{
     height: 70px;
     width: 220px;
     font-size: 20px;
+    cursor: pointer;
+    text-align: center;
   }
-  #button1:hover{
+
+  .left #button1:hover{
     background-color: #CF4E24;
     border: solid 1px #93B1BD;
     color: #93B1BD;
   }
-
-  #button2{
-    position: relative;
-    top: 650px;
-    right: 130px;
-    background-color: #E5A91F;
-    border: solid 1px #00467C;
-    color: #00467C;
-    border-radius: 10px;
-    height: 70px;
-    width: 220px;
-    font-size: 20px;
-  }
-
-  #button2:hover{
-    background-color: #CF4E24;
-    border: solid 1px #93B1BD;
-    color: #93B1BD;
-  }
-  .middle{
-    font: serif;
-    color: #BD0128;
-    position: relative;
-    top: 400px;
-    right: 600px;
-  }
-  .middle2{
-    font: serif;
-    color: #BD0128;
-    position: relative;
-    top: 600px;
-    right: 600px;
-  }
-
