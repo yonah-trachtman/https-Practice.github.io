@@ -1,8 +1,5 @@
 #logo {
   float: right;
-  position: absolute;
-  top: 0%;
-  right:0%
 }
 
 ul.nav2 {
@@ -10,6 +7,8 @@ ul.nav2 {
     background-color: #00467C;
     text-align: center;
     border: 1px solid;
+    overflow: auto;
+    height: 50px;
   }
   ul.nav2 > li {
     display: inline-block;
@@ -20,6 +19,15 @@ ul.nav2 {
     z-index: 5;
     top: 10px;
   }
+
+  ul .nav2 img{
+    height: 50%;
+  }
+
+  input[placeholder] {
+    text-align: center;
+  }
+
   #Phone {
     padding: 10px;
     font-size: 16px;
@@ -73,7 +81,10 @@ ul.nav2 {
     display: block;
 }
   
-  
+  .nav1{
+    position: relative;
+    left: 20%;
+  }
  
   ul.nav1 {
     display: flex;
@@ -83,9 +94,12 @@ ul.nav2 {
     border-radius: 20px;
     text-align: center;
     width: 100%;
-  
+    size: 100%;
+    overflow: auto;
     
 }
+
+
 .nav1-content1 {
   position: relative;
   display: inline-block;
@@ -97,7 +111,7 @@ ul.nav2 {
   color: #00467C;
   font-size: 20px; 
   border: none;
-  background-color: white;
+  background: none;
 }
 
 .nav1-content2 {
@@ -111,6 +125,7 @@ ul.nav2 {
   color: #00467C;
   font-size: 20px;
   border: none;
+  background: none;
 }
 .nav1-content1:hover{
 background-color: #FFDE5F;
@@ -128,41 +143,49 @@ select:hover{
   }
 
 
-  .nav3{
+  .imageBox{
     flex-wrap: wrap;
     justify-content: center;
+    size: 100%;
+    overflow: auto;
   }
 
-  .nav3 img {
-    width: 33.33%;
+  .imageBox img {
     position: relative;
-    margin: 0;
+    width: 30%;
+    z-index: 1;
     float: left;
   }
 
-
-  .nav3 .middle .middle1{
-    position: absolute;
-    font: serif;
-    color: #BD0128;
-    top: 40%;
-    right: 40%;
-    
-  }
-  .nav3 .middle .middle2{
-    position: absolute;
-    font: serif;
-    color: #BD0128;
-    top: 75%;
-    right: 40%;
-    
+  .imageBox .left img{
+    padding-left: 5%;
   }
 
 
-  .nav3 .right #button2 {
+  .imageBox .middle1{
     position: absolute;
-    top: 82%;
-    left: 85%;
+    font: serif;
+    color: #BD0128;
+    top: 30%;
+    right: 41%;
+    z-index: 2;
+    
+  }
+  .imageBox .middle2{
+    position: absolute;
+    font: serif;
+    color: #BD0128;
+    top: 60%;
+    right: 41%;
+    z-index: 2;
+    
+  }
+
+
+  .imageBox #button2 {
+    position: absolute;
+    top: 73%;
+    left: 80%;
     transform: translate(-50%, -50%);
     background-color: #E5A91F;
     border: solid 1px #00467C;
@@ -171,17 +194,20 @@ select:hover{
     font-size: 20px;
     cursor: pointer;
     text-align: center;
+    z-index: 2;
+    size: 80%;
   }
-  .right #button2:hover {
+   #button2:hover {
     background-color: #CF4E24;
     border: solid 1px #93B1BD;
     color: #93B1BD;
   }
 
-  .left #button1{
+   #button1{
     position: absolute;
-    top: 80%;
-    right: 75%;
+    top: 70%;
+    right: 73%;
+    z-index: 9;
     background-color: #E5A91F;
     border: solid 1px #00467C;
     color: #00467C;
@@ -191,10 +217,43 @@ select:hover{
     font-size: 20px;
     cursor: pointer;
     text-align: center;
+    z-index: 2;
+    size: 80%;
   }
 
-  .left #button1:hover{
+   #button1:hover{
     background-color: #CF4E24;
     border: solid 1px #93B1BD;
     color: #93B1BD;
   }
+
+  #logo{
+    position: absolute;
+    top: 0%;
+    right:0%;
+    size: 33%;
+  }
+
+  #login{
+    position: absolute;
+    border: none;
+    background: none;
+    color: #00467C;
+    font-size: 125%;
+  }
+
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+
